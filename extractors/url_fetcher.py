@@ -1,5 +1,7 @@
 """Fetch PDF or other files from URLs."""
 
+from __future__ import annotations
+
 import tempfile
 from pathlib import Path
 from urllib.parse import urlparse

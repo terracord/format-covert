@@ -1,7 +1,10 @@
 """Stage 4: Validation - quality checks and confidence scoring."""
 
+from __future__ import annotations
+
 import re
 from dataclasses import dataclass
+from typing import Optional
 
 import pandas as pd
 
@@ -162,5 +165,3 @@ def run_validation(
     return all_results, confidence
 
 
-# Fix: add Optional import at top-level
-from typing import Optional

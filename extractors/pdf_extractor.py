@@ -4,6 +4,8 @@ Uses multiple extraction engines (pdfplumber, PyMuPDF, Camelot) and
 produces intermediate JSON with per-page elements.
 """
 
+from __future__ import annotations
+
 import io
 import json
 import re

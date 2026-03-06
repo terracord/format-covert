@@ -1,5 +1,7 @@
 """Stage 2: Document classification - detect document format patterns."""
 
+from __future__ import annotations
+
 import json
 import re
 from pathlib import Path

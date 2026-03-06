@@ -1,5 +1,7 @@
 """Stage 3: CSV conversion engine - maps extracted data to CSV format."""
 
+from __future__ import annotations
+
 import csv
 import io
 from typing import Optional
