@@ -1,0 +1,20 @@
+{
+  "pattern_id": "csa_2024",
+  "name": "S&P Global CSA 2024",
+  "fingerprint": {
+    "header_keywords": ["CSA 2024", "Corporate Sustainability Assessment", "S&P Global"],
+    "filename_keywords": ["csa", "sustainability_assessment"],
+    "section_pattern": "^\\d+\\.\\d+"
+  },
+  "output_columns": [
+    "section_id",
+    "question_id",
+    "question_text",
+    "response_type",
+    "response_value",
+    "supporting_url",
+    "page_reference"
+  ],
+  "last_updated": "2026-03-06",
+  "accuracy_score": 0.85
+}

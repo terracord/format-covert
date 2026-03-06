@@ -1,0 +1,19 @@
+{
+  "pattern_id": "cdp_climate",
+  "name": "CDP Climate Change Questionnaire",
+  "fingerprint": {
+    "header_keywords": ["CDP", "Climate Change", "Carbon Disclosure"],
+    "filename_keywords": ["cdp", "climate_change"],
+    "section_pattern": "^C\\d+\\.\\d+"
+  },
+  "output_columns": [
+    "module",
+    "question_id",
+    "question_text",
+    "response_type",
+    "response_value",
+    "page_reference"
+  ],
+  "last_updated": "2026-03-06",
+  "accuracy_score": 0.80
+}
