@@ -165,16 +165,15 @@ def extract_pdf(
     Returns:
         List of page results as dictionaries.
     """
-    open_args = {}
     if file_bytes:
-        open_args["stream"] = io.BytesIO(file_bytes)
+        pdf_source = io.BytesIO(file_bytes)
     elif file_path:
-        open_args["path_or_fp"] = file_path
+        pdf_source = file_path
     else:
         raise ValueError("Either file_path or file_bytes must be provided")
 
     results = []
-    with pdfplumber.open(**open_args) as pdf:
+    with pdfplumber.open(pdf_source) as pdf:
         for page in pdf.pages:
             if pages and page.page_number not in pages:
                 continue
